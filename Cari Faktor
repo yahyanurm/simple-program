@@ -1,0 +1,15 @@
+"""
+Program mencari faktor suatu bilangan
+"""
+num=int(input("Masukkan bilangan : "))
+
+def carifaktor(num):
+    fak=[1]
+    for i in range(2,num+1):
+        if num%i==0:
+            fak.append(i)
+    return fak
+faktor=carifaktor(num)
+print("Faktor dari {} adalah".format(num))
+for i in faktor:
+    print(i ,end=" ")
